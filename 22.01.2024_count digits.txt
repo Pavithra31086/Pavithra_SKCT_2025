@@ -1,0 +1,40 @@
+Example 1: Input0: N = 12345
+
+Example 2: Input1: N = 8394
+
+Constraints
+
+n <= 10000
+
+Output Format
+
+Output0: 5 Explanation: N has 5 digits
+
+Output1: 4 Explanation: N has 4 digits
+
+Sample Input 0
+
+12345
+Sample Output 0
+
+5
+
+Answer:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner obj = new Scanner(System.in);
+        String s = obj.next();
+        int count = 0;
+        for(int i =0;i<s.length();i++)
+        {
+            count++;
+        }
+        System.out.print(count);
+    }
+}
